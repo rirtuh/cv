@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ramal Ismayilov | Cybersecurity Specialist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+    --bg:#020617;
+    --card:#0b1220;
+    --accent:#38bdf8;
+    --green:#22c55e;
+    --text:#e5e7eb;
+    --muted:#9ca3af;
+}
+
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    background:#020617;
+    font-family:Inter, system-ui, sans-serif;
+    color:var(--text);
+    padding:20px 0;
+}
+
+/* CONTAINER WITH LED GLOW */
+.container{
+    max-width:1100px;
+    margin:auto;
+    background:var(--card);
+    border-radius:16px;
+    padding:28px;
+    position:relative;
+    overflow:hidden;
+
+    /* LED glow effect */
+    box-shadow:
+        0 0 15px rgba(56,189,248,0.5),
+        0 0 30px rgba(56,189,248,0.3),
+        0 0 60px rgba(56,189,248,0.2);
+    border: 1px solid rgba(56,189,248,0.6);
+}
+
+/* HEADER */
+.header{
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+    gap:22px;
+    align-items:center;
+    border-bottom:1px solid #1f2937;
+    padding-bottom:22px;
+}
+
+.profile-img{
+    width:115px;
+    height:115px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid var(--accent);
+}
+
+/* TERMINAL ANIMATION */
+.terminal{
+    font-family:"Courier New", monospace;
+    font-size:18px;
+    color:var(--green);
+}
+.prompt{color:var(--accent)}
+.cursor{
+    display:inline-block;
+    width:10px;
+    background-color:var(--green);
+    margin-left:2px;
+    animation:blink 1s infinite;
+}
+@keyframes blink{
+    0%,50%,100%{opacity:1}
+    25%,75%{opacity:0}
+}
+
+.role{
+    margin-top:4px;
+    color:var(--accent);
+    font-weight:600;
+    font-size:14px;
+}
+
+.contact{
+    margin-top:10px;
+    color:var(--muted);
+    font-size:12px;
+    line-height:1.6;
+}
+
+/* SOCIAL ICONS WITH HOVER ANIMATION */
+.socials a{
+    color:var(--accent);
+    font-size:22px;
+    margin-left:12px;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 0 var(--accent);
+}
+.socials a:hover{
+    color:#38bdf8;
+    transform:scale(1.3);
+    text-shadow: 0 0 10px #38bdf8, 0 0 20px #38bdf8, 0 0 30px #38bdf8;
+}
+
+/* GRID */
+.main{
+    display:grid;
+    grid-template-columns:1.25fr 1fr;
+    gap:28px;
+    margin-top:28px;
+}
+
+.section h2{
+    font-size:14px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:var(--accent);
+}
+
+.section p, li{
+    font-size:13px;
+    color:#d1d5db;
+    line-height:1.65;
+}
+
+ul{padding-left:16px}
+
+/* SKILLS */
+.skills{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:9px;
+}
+
+.skill{
+    background:#020617;
+    padding:9px 12px;
+    border-radius:10px;
+    border-left:3px solid var(--accent);
+}
+
+/* CERT */
+.cert{
+    background:#020617;
+    padding:10px 14px;
+    border-radius:10px;
+    margin-bottom:8px;
+}
+.cert span{
+    color:var(--accent);
+    font-weight:600;
+}
+
+.footer{
+    margin-top:22px;
+    text-align:center;
+    font-size:11px;
+    color:var(--muted);
+    border-top:1px solid #1f2937;
+    padding-top:12px;
+}
+
+@media(max-width:900px){
+    .header{grid-template-columns:1fr}
+    .main{grid-template-columns:1fr}
+    .profile-img{margin:auto}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- HEADER -->
+<div class="header">
+
+<img src="https://i.postimg.cc/05GtR3Mq/sekil.jpg" class="profile-img" alt="Ramal Ismayilov">
+
+<div>
+    <div class="terminal">
+        <span class="prompt">root@r4moo:~$</span> <span id="typing"></span><span class="cursor"></span>
+    </div>
+
+    <div class="role">
+        Cybersecurity Specialist | Red Team / Pentesting
+    </div>
+
+    <div class="contact">
+        📍 Sumgait, Azerbaijan<br>
+        ✉️ iramal384@gmail.com<br>
+        📞 (+994) 51 327 9885
+    </div>
+</div>
+
+<div class="socials">
+    <a href="https://github.com/rirtuh" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/ramal-ismayilov1221" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+
+</div>
+
+<!-- CONTENT -->
+<div class="main">
+
+<!-- LEFT -->
+<div>
+
+<div class="section">
+<h2>Professional Summary</h2>
+<p>
+Cybersecurity-focused Computer Science student with strong hands-on experience in
+<b>web and network penetration testing</b>, <b>CTF challenges</b>, and
+<b>offensive security methodologies</b>.
+Skilled in manual vulnerability discovery, attack path analysis, and exploitation
+techniques with a strong understanding of attacker mindset and defensive impact.
+</p>
+</div>
+
+<div class="section">
+<h2>Key Differentiating Skills</h2>
+<div class="skills">
+<div class="skill">Manual Web & Network Pentesting</div>
+<div class="skill">CTF Problem Solving (Web / Linux / Network)</div>
+<div class="skill">Attack Path & Threat Modeling</div>
+<div class="skill">Linux Privilege Escalation</div>
+<div class="skill">Windows Privilege Escalation (Basics)</div>
+<div class="skill">Active Directory Attack Concepts</div>
+<div class="skill">Python for Security Automation</div>
+<div class="skill">Python & C++ Programming</div>
+<div class="skill">Networking (TCP/IP, DNS, HTTP/S)</div>
+<div class="skill">Linux for Offensive Security</div>
+<div class="skill">Cryptography Fundamentals</div>
+<div class="skill">AV & Payload Behavior Awareness</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Hands-on Practice</h2>
+<ul>
+<li>TryHackMe – offensive & defensive labs</li>
+<li>Hack The Box – enterprise-style environments</li>
+<li>CTF challenges focused on exploitation</li>
+<li>Manual testing supported by automated tools</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Languages</h2>
+<p>
+Azerbaijani – Native<br>
+Turkish – Fluent<br>
+English – Technical
+</p>
+</div>
+
+</div>
+
+<!-- RIGHT -->
+<div>
+
+<div class="section">
+<h2>Education</h2>
+
+<div class="cert">
+<span>Baku State University</span><br>
+Bachelor of Computer Science<br>
+<small>Instruction Language: English (Ongoing)</small>
+</div>
+
+<div class="cert">
+<span>Sumgait City Secondary School No.31</span><br>
+Full Secondary Education
+</div>
+
+</div>
+
+<div class="section">
+<h2>Training & Bootcamps</h2>
+<div class="cert"><span>Ugur IT Academy</span> – Cybersecurity Bootcamp</div>
+<div class="cert"><span>Software Village</span> – Cybersecurity Specialist Program</div>
+</div>
+
+<div class="section">
+<h2>Certifications & Courses</h2>
+<div class="cert"><span>Google (Coursera)</span> – Foundations of Cybersecurity</div>
+<div class="cert"><span>Google (Coursera)</span> – Automate Cybersecurity Tasks with Python</div>
+<div class="cert"><span>IBM SkillsBuild</span> – Incident Response & OpenVAS</div>
+<div class="cert"><span>IBM SkillsBuild</span> – Network Traffic Analysis (Wireshark)</div>
+<div class="cert"><span>IBM SkillsBuild</span> – Exploitation with Metasploit</div>
+<div class="cert"><span>SkillUp (Simplilearn)</span> – Ethical Hacking with Kali Linux</div>
+</div>
+
+<div class="section">
+<h2>GitHub & Self-Learning</h2>
+<p>
+Active GitHub user focused on continuous learning, experimenting with
+security tools, scripts, and lab-based projects.
+Currently building practical offensive security projects and automation scripts.
+</p>
+</div>
+
+</div>
+</div>
+
+<div class="footer">
+© Ramal Ismayilov 2026. All rights reserved.
+</div>
+
+</div>
+
+<!-- TYPING EFFECT SCRIPT -->
+<script>
+const text = " RAMAL_ISMAYILOV";
+let i = 0;
+const speed = 120;
+
+function typeWriter(){
+    if(i < text.length){
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+}
+typeWriter();
+</script>
+
+</body>
+</html>
